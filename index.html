@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!---->
+    <link rel="icon" type="image/x-icon" href="Assets/icon.png">
+    <script src="https://kit.fontawesome.com/d4f7480f8a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+    <div class="container">
+    <nav>
+        <!---->
+        <img src="Assets/logo2.jpg"  class="logo">
+        <ul id="sidemenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about"> About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#services">Projects</a></li>
+            <li><a href="#portfolio">My Work</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
+    <div class="header-text">
+        <!--<p>Data Analyst</p>-->
+        <div class="box1">
+            <div class="animation">
+                <h1>Hey, I'm <span id="sp1">Mayank Giri</span></h1>
+                <h1><span class="auto-type"></span></h1>
+                <div class="para">
+                <p>I am a Pre-final year student at BIrla institute of Technology, Mesra, majoring in Chemical Engineering. I am passionate about solving technical and real world problems, learning new technologies and implementing new techniques.</p>
+            </div> 
+        </div> 
+        </div>
+        <div class="box2">
+            <img  class="mypr" src="Assets/My_profile.jpg" alt="">
+        </div>  
+        </div>      
+    </div>
+</div>
+<!-- --------about------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col1">
+                <img src="Assets/mydp.jpg" alt="">
+            </div>
+            <div class="about-col2">
+                <h1 class="sub-tittle">About Me</h1>
+                
+                <p>I am a Pre-final year student at BIrla institute of Technology, Mesra, majoring in Chemical Engineering.</p>
+                <br>
+                <p>I have completed my schooling at D.A.V. Public School,Dhanbad. From a young age, I was keenly interested in programming and had a great interest in technology. I have a strong command of machine learning algorithms and data analysis tools. Along with this, I also have sound knowledge of linear data structures and case studies all around.</p>
+                <br>
+                <p>In my free time, I love to listen to music and play cricket. I also represented my school in the Zonal Cricket Championship held in Sahibganj.</p>
+                <div class="tab-tittles">
+                    <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('acheivements')">acheivements</p>
+                    <p class="tab-links" onclick="opentab('position')">Position of Responsibility</p>
+                </div>
+                <div class="tab-content active-tab" id="education">
+                    <ul> 
+                        <li> <span>2021-2025</span><br>B.Tech in Chemical Engineering @ BIT Mesra</li>
+                        <li> <span>2020</span><br>Intermediate with 84.15%</li>
+                        <li> <span>2018</span><br>Matriculation with 80.5%</li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="acheivements">
+                    <ul class="achieve">
+                        <li>&#x2022; Recipient of GP Birla Scholarship SP-2022</li>
+                       <li>&#x2022; Secured 1st position in Inter School Debate competetion</li>
+                        <li>&#x2022; Secured 2nd position in the Inter District competetion held at Dhanbad</li>
+                        </ul>
+                        
+                    
+                </div>
+                <div class="tab-content" id="position">
+                    <ul>
+                        <li> <span>IETE (Treasurer)</span> <br>Organized and managed successful club events and fundraisers - Coordinated
+                            logistics, budgeting, and vendor relations for events - Led event promotion and
+                            marketing efforts to drive participation</li>
+                        <li> <span>IEEE (Publicty Head)</span> <br> Mentored diverse group of
+                            students, helping them
+                            navigate programming
+                            challenges and career
+                            aspirations</li>
+                    </ul>
+
+                </div>
+            <!-- -----comment----
+            <div class="about-col2">
+                <h1 class="sub-tittle">About Me</h1>
+               
+                <p>I am a Pre-final year student at BIrla institute of Technology, Mesra, majoring in Chemical Engineering. <br></p>
+                <br>
+                <p>I have completed my schooling at D.A.V. Public School,Dhanbad. From a young age, I was keenly interested in programming and had a great interest in technology. I have a strong command of machine learning algorithms and data analysis tools. Along with this, I also have sound knowledge of linear data structures and case studies all around.</p>
+                <br>
+                <p>In my free time, I love to listen to music and play cricket. I also represented my school in the Zonal Cricket Championship held in Sahibganj.</p>
+            
+                <div class="tab-tittles">
+                    <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('acheivements')">Acheivements</p>
+                    <p class="tab-links" onclick="opentab('position')">Position Of Responsibility</p>
+                    
+                </div>
+                <div class="tab-content" id="education">
+                    <ul>
+                        <li> <span>2021-2025</span><br>B.Tech in Chemical Engineering @ BIT Mesra</li>
+                        <li> <span>2020</span><br>Intermediate with 84.15%</li>
+                        <li> <span>2018</span><br>Matriculation with 80.5%</li>
+                    </ul>
+                </div>
+                <div class="tab-content active-tab" id="acheivements" >
+                    <ul class="achieve">
+                    <li>&#x2022; Recipient of GP Birla Scholarship SP-2022</li>
+                   <li>&#x2022; Secured 1st position in Inter School Debate competetion</li>
+                    <li>&#x2022; Secured 2nd position in the Inter District competetion held at Dhanbad</li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="position">
+                    <ul>
+                        <li> <span>IETE (Treasurer)</span> <br>Organized and managed successful club events and fundraisers - Coordinated
+                            logistics, budgeting, and vendor relations for events - Led event promotion and
+                            marketing efforts to drive participation</li>
+                        <li> <span>IEEE (Publicty Head)</span> <br> Mentored diverse group of
+                            students, helping them
+                            navigate programming
+                            challenges and career
+                            aspirations</li>
+                    </ul>
+                </div>
+            </div>
+            ---- -->
+        </div>
+    </div>
+</div>
+
+
+    <!-- skills-->
+</div class="mai">
+<div class="skills" id="skills">
+    <h1 class="skill-header">Skills</h1>
+
+    <div class="skills-wrapper">
+      <div class="first-set animate__animated animate__pulse">
+        <img
+          src="Assets/power bi im.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="Assets/postgresql.svg"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="Assets/excel-4 (1).svg"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+          />
+          <img
+          src="Assets/python-4.svg"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+          />
+      </div>
+
+
+      <div class="second-set animate__animated animate__pulse">
+        <img
+          src="Assets/html-1.svg"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img src="Assets/css-3.svg" alt=""
+        loading="lazy"
+        class="icon icon-card"
+        />
+        <img
+          src="Assets/bootstrap-5-1.svg"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img src="Assets/logo-javascript.svg" alt=""
+        loading="lazy"
+        class="icon icon-card"
+        />
+       
+      </div>
+      <div class="Third-set animate__animated animate__pulse">
+        <img
+        src="Assets/ml 2.jpg"
+        alt=""
+        loading="lazy"
+        class="icon icon-card ml"
+        />
+        <img
+        src="Assets/C++ svg.svg"
+        alt=""
+        loading="lazy"
+        class="icon icon-card"
+        />
+        <img
+        src="Assets/leadership.jpg"
+        alt=""
+        loading="lazy"
+        class="icon icon-card"
+        />
+        <img
+        src="Assets/orator.png"
+        alt=""
+        loading="lazy"
+        class="icon icon-card orator"
+        />
+    </div>
+</div>
+</div>
+
+
+    <!-- --------Projects------ -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-tittle">Projects</h1>
+                <div class="services-list">
+                <div>
+                        <div class="services-img">
+                        <!--added svg files for logo 1st pyhton, 2nd- excel, 3rd- seaborn, 4th- python-->
+                        <svg width="2500" height="2400" viewBox="0 0 256 255" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet"><defs><linearGradient x1="12.959%" y1="12.039%" x2="79.639%" y2="78.201%" id="a"><stop stop-color="#387EB8" offset="0%"/><stop stop-color="#366994" offset="100%"/></linearGradient><linearGradient x1="19.128%" y1="20.579%" x2="90.742%" y2="88.429%" id="b"><stop stop-color="#FFE052" offset="0%"/><stop stop-color="#FFC331" offset="100%"/></linearGradient></defs><path d="M126.916.072c-64.832 0-60.784 28.115-60.784 28.115l.072 29.128h61.868v8.745H41.631S.145 61.355.145 126.77c0 65.417 36.21 63.097 36.21 63.097h21.61v-30.356s-1.165-36.21 35.632-36.21h61.362s34.475.557 34.475-33.319V33.97S194.67.072 126.916.072zM92.802 19.66a11.12 11.12 0 0 1 11.13 11.13 11.12 11.12 0 0 1-11.13 11.13 11.12 11.12 0 0 1-11.13-11.13 11.12 11.12 0 0 1 11.13-11.13z" fill="url(#a)"/><path d="M128.757 254.126c64.832 0 60.784-28.115 60.784-28.115l-.072-29.127H127.6v-8.745h86.441s41.486 4.705 41.486-60.712c0-65.416-36.21-63.096-36.21-63.096h-21.61v30.355s1.165 36.21-35.632 36.21h-61.362s-34.475-.557-34.475 33.32v56.013s-5.235 33.897 62.518 33.897zm34.114-19.586a11.12 11.12 0 0 1-11.13-11.13 11.12 11.12 0 0 1 11.13-11.131 11.12 11.12 0 0 1 11.13 11.13 11.12 11.12 0 0 1-11.13 11.13z" fill="url(#b)"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-0.12979372698077785 0 32.12979372698078 32" width="2500" height="2480"><g data-name="STYLE = COLOR"><path d="M20 2H9.333A1.333 1.333 0 0 0 8 3.333V9l12 7 6 2.532L32 16V9z" fill="#21a366"/><path fill="#107c41" d="M8 9h12v7H8z"/><path d="M30.667 2H20v7h12V3.333A1.333 1.333 0 0 0 30.667 2z" fill="#33c481"/><path d="M20 16H8v12.667A1.333 1.333 0 0 0 9.333 30h21.334A1.333 1.333 0 0 0 32 28.667V23z" fill="#185c37"/><path fill="#107c41" d="M20 16h12v7H20z"/><path d="M16.667 7H8v19h8.667A1.337 1.337 0 0 0 18 24.667V8.333A1.337 1.337 0 0 0 16.667 7z" opacity=".1"/><path d="M15.667 8H8v19h7.667A1.337 1.337 0 0 0 17 25.667V9.333A1.337 1.337 0 0 0 15.667 8z" opacity=".2"/><path d="M15.667 8H8v17h7.667A1.337 1.337 0 0 0 17 23.667V9.333A1.337 1.337 0 0 0 15.667 8z" opacity=".2"/><path d="M14.667 8H8v17h6.667A1.337 1.337 0 0 0 16 23.667V9.333A1.337 1.337 0 0 0 14.667 8z" opacity=".2"/><path data-name="Back Plate" d="M1.333 8h13.334A1.333 1.333 0 0 1 16 9.333v13.334A1.333 1.333 0 0 1 14.667 24H1.333A1.333 1.333 0 0 1 0 22.667V9.333A1.333 1.333 0 0 1 1.333 8z" fill="#107c41"/><path d="M3.533 21l3.236-5.014L3.805 11H6.19l1.618 3.187q.223.453.307.676h.021q.16-.362.335-.704L10.2 11h2.189l-3.04 4.958L12.466 21h-2.33l-1.869-3.5a2.922 2.922 0 0 1-.223-.468h-.028a2.207 2.207 0 0 1-.216.453L5.877 21z" fill="#fff"/><path fill="none" d="M0 0h32v32H0z"/></g></svg>
+                        <h2>Unempolyment Rate Analysis</h2>
+                        <p>This project basically analyzes data of the Unemployment rate of different states of India before Covid 19 and after covid 19 and based on that data we conclude various information like Most adversely affected states, Poorest state etc.</p>
+                        <br>
+                        <div class="git2"><a href="https://github.com/mayank29568/Unemployment-Analysis-using-Python"><b class="git1-size">Github Repo</b></a></div>
+                    </div>
+                    </div>
+                    <div class="services-img2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="2500" height="2400" viewBox="0 0 256 256"><path fill="#FFF" d="M128.902 2.393a124.702 124.702 0 0 0-124.7 124.7a124.702 124.702 0 0 0 124.7 124.698A124.702 124.702 0 0 0 253.59 128.676l.01-1.584l-.01-1.584A124.702 124.702 0 0 0 128.902 2.393Z"/><g fill="#AFDAD2" stroke="#FFF" stroke-width=".25"><path d="M100.427 73.98a4.803 4.803 0 1 0 0-9.606a4.803 4.803 0 0 0 0 9.606Zm-10.343 7.242a4.652 4.652 0 1 0 0-9.304a4.652 4.652 0 0 0 0 9.304Zm-9.949 4.608a4.38 4.38 0 1 0 0-8.76a4.38 4.38 0 0 0 0 8.76Zm29.017-17.572a4.946 4.946 0 1 0 0-9.89a4.946 4.946 0 0 0 0 9.89ZM72.67 75.444a3.323 3.323 0 1 0 0-6.646a3.323 3.323 0 0 0 0 6.646Zm-8.205 18.204a3.948 3.948 0 1 0 0-7.896a3.948 3.948 0 0 0 0 7.896Zm5.022-31.26a4.757 4.757 0 1 0 0-9.515a4.757 4.757 0 0 0 0 9.515Zm12.837 8.902a3.68 3.68 0 1 0 0-7.358a3.68 3.68 0 0 0 0 7.359Zm63.444-10.98a4.302 4.302 0 1 0 0-8.605a4.302 4.302 0 0 0 0 8.605ZM55.535 83.116a2.608 2.608 0 1 0 0-5.216a2.608 2.608 0 0 0 0 5.216ZM64.2 80.66a3.095 3.095 0 1 0 0-6.189a3.095 3.095 0 0 0 0 6.19Zm-15.801-9.806a4.103 4.103 0 1 0 0-8.205a4.103 4.103 0 0 0 0 8.205Zm16.141-1.808a2.139 2.139 0 1 0 0-4.277a2.139 2.139 0 0 0 0 4.277Zm28.635-3.334a3.992 3.992 0 1 0 0-7.985a3.992 3.992 0 0 0 0 7.985Zm30.33 2.311a3.446 3.446 0 1 0 0-6.891a3.446 3.446 0 0 0 0 6.89Zm6.307-21.497a2.255 2.255 0 1 0 0-4.51a2.255 2.255 0 0 0 0 4.51Zm7.331 12.982a3.768 3.768 0 1 0 0-7.536a3.768 3.768 0 0 0 0 7.536ZM99.5 57.31a3.872 3.872 0 1 0 0-7.744a3.872 3.872 0 0 0 0 7.744ZM50.998 94.521a3.142 3.142 0 1 0 0-6.284a3.142 3.142 0 0 0 0 6.284Z"/><path d="M154.48 61.132a4.785 4.785 0 1 0 0-9.57a4.785 4.785 0 0 0 0 9.57Zm-46.171-3.241a4.392 4.392 0 1 0 0-8.784a4.392 4.392 0 0 0 0 8.784Zm-51.029 3.54a4.072 4.072 0 1 0 0-8.144a4.072 4.072 0 0 0 0 8.144Zm22.662-10.513a4.708 4.708 0 1 0 0-9.416a4.708 4.708 0 0 0 0 9.416Zm88.325 6.34a2.908 2.908 0 1 0 0-5.816a2.908 2.908 0 0 0 0 5.816ZM66.977 45.382a3.7 3.7 0 1 0 0-7.398a3.7 3.7 0 0 0 0 7.398ZM83.658 61.95a3.148 3.148 0 1 0 0-6.296a3.148 3.148 0 0 0 0 6.296Zm7.542-6.832a3.199 3.199 0 1 0-.001-6.397a3.199 3.199 0 0 0 0 6.397Zm-49.398 8.125a3.22 3.22 0 1 0 0-6.44a3.22 3.22 0 0 0 0 6.44Zm8.868-12.521a2.954 2.954 0 1 0 0-5.908a2.954 2.954 0 0 0 0 5.908Zm68.154 9.171a2.476 2.476 0 1 0 0-4.953a2.476 2.476 0 0 0 0 4.953ZM39.53 79.544a4.092 4.092 0 1 0 0-8.185a4.092 4.092 0 0 0 0 8.185Zm-9.14-6.9a3.077 3.077 0 1 0 0-6.153a3.077 3.077 0 0 0 0 6.153Zm96.879-13.47a3.095 3.095 0 1 0 0-6.19a3.095 3.095 0 0 0 0 6.19ZM56.914 75.243a4.77 4.77 0 1 0 0-9.542a4.77 4.77 0 0 0 0 9.542Z"/><path d="M162.01 53.552a4.783 4.783 0 1 0 0-9.565a4.783 4.783 0 0 0 0 9.565ZM42.067 98.617a2.776 2.776 0 1 0 0-5.552a2.776 2.776 0 0 0 0 5.552Zm69.34-54.147a3.817 3.817 0 1 0 0-7.633a3.817 3.817 0 0 0 0 7.633Zm79.294 5.256a3.899 3.899 0 1 0 0-7.798a3.899 3.899 0 0 0 0 7.798Zm-51.863-1.986a3.104 3.104 0 1 0 0-6.21a3.104 3.104 0 0 0 0 6.21Zm-67.68 40.953a4.047 4.047 0 1 0 0-8.095a4.047 4.047 0 0 0 0 8.095Zm78.208-39.617a3.875 3.875 0 1 0 0-7.75a3.875 3.875 0 0 0 0 7.75Zm27.438 3.777a3.211 3.211 0 1 0 0-6.423a3.211 3.211 0 0 0 0 6.423Zm30.314 6.96a2.895 2.895 0 1 0 0-5.79a2.895 2.895 0 0 0 0 5.79ZM98.802 38.544a2.495 2.495 0 1 0 0-4.99a2.495 2.495 0 0 0 0 4.99Zm22.683-6.848a3.652 3.652 0 1 0 0-7.305a3.652 3.652 0 0 0 0 7.305Zm84.987 19.578a4.812 4.812 0 1 0 0-9.624a4.812 4.812 0 0 0 0 9.624Zm-90.498 1.966a4.547 4.547 0 1 0 0-9.095a4.547 4.547 0 0 0 0 9.094Zm16.823-17.041a4.536 4.536 0 1 0 0-9.072a4.536 4.536 0 0 0 0 9.072Zm39.323 5.526a4.7 4.7 0 1 0 0-9.399a4.7 4.7 0 0 0 0 9.399Zm48.649 29.541a4.45 4.45 0 1 0 0-8.898a4.45 4.45 0 0 0 0 8.898ZM120.458 17.405a2.54 2.54 0 1 0 0-5.08a2.54 2.54 0 0 0 0 5.08Z"/><path d="M161.022 44.369a4.266 4.266 0 1 0 0-8.531a4.266 4.266 0 0 0 0 8.531Zm-5.707-8.193a3.443 3.443 0 1 0 0-6.886a3.443 3.443 0 0 0 0 6.886Zm-17.302-7.496a4.418 4.418 0 1 0 0-8.836a4.418 4.418 0 0 0 0 8.836ZM89.282 46.695a4.952 4.952 0 1 0 0-9.905a4.952 4.952 0 0 0 0 9.905Zm-30.553-7.292a2.697 2.697 0 1 0 0-5.394a2.697 2.697 0 0 0 0 5.394Zm12.821-1.809a3.496 3.496 0 1 0 0-6.992a3.496 3.496 0 0 0 0 6.992Zm117.466 21.181a4.31 4.31 0 1 0 0-8.619a4.31 4.31 0 0 0 0 8.619ZM141.738 36.06a2.393 2.393 0 1 0 0-4.786a2.393 2.393 0 0 0 0 4.786Zm-50.814.482a4.539 4.539 0 1 0 0-9.078a4.539 4.539 0 0 0 0 9.078ZM24.326 92.178a3.946 3.946 0 1 0 0-7.892a3.946 3.946 0 0 0 0 7.892Zm10.512 1.362a4.585 4.585 0 1 0 0-9.17a4.585 4.585 0 0 0 0 9.17Zm37.049-40.42a4.412 4.412 0 1 0 0-8.824a4.412 4.412 0 0 0 0 8.825ZM25.623 82.356a3.42 3.42 0 1 0 0-6.84a3.42 3.42 0 0 0 0 6.84Zm137.891-49.643a3.742 3.742 0 1 0 0-7.485a3.742 3.742 0 0 0 0 7.485ZM59.334 48.427a3.405 3.405 0 1 0 0-6.811a3.405 3.405 0 0 0 0 6.81Z"/><path d="M42.825 89.445a4.776 4.776 0 1 0 0-9.553a4.776 4.776 0 0 0 0 9.553Zm155.259-32.502a4.68 4.68 0 1 0 0-9.359a4.68 4.68 0 0 0 0 9.36Zm16.871-.557a3.219 3.219 0 1 0 0-6.437a3.219 3.219 0 0 0 0 6.437ZM103.689 48.42a3.585 3.585 0 1 0 0-7.17a3.585 3.585 0 0 0 0 7.17Zm78.693-4.03a3.003 3.003 0 1 0 0-6.005a3.003 3.003 0 0 0 0 6.005Zm-1.29-7.523a4.897 4.897 0 1 0 0-9.794a4.897 4.897 0 0 0 0 9.794Zm-60.374 8.346a4.378 4.378 0 1 0 0-8.757a4.378 4.378 0 0 0 0 8.757Zm92.517 21.163a3.756 3.756 0 1 0 0-7.512a3.756 3.756 0 0 0 0 7.512ZM33.938 100.288a2.203 2.203 0 1 0 0-4.406a2.203 2.203 0 0 0 0 4.406Zm46.295-61.082a4.113 4.113 0 1 0 0-8.226a4.113 4.113 0 0 0 0 8.226Zm30.02-6.706a2.938 2.938 0 1 0 0-5.876a2.938 2.938 0 0 0 0 5.876Zm85.254 9.046a3.696 3.696 0 1 0 0-7.393a3.696 3.696 0 0 0 0 7.393Zm-93.464-14.978a4.596 4.596 0 1 0 0-9.193a4.596 4.596 0 0 0 0 9.193Z"/><path d="M174.151 30.958a4.25 4.25 0 1 0 0-8.501a4.25 4.25 0 0 0 0 8.5Zm-92.824-4.532a3.405 3.405 0 1 0 0-6.81a3.405 3.405 0 0 0 0 6.81Zm8.176-2.632a3.756 3.756 0 1 0 0-7.513a3.756 3.756 0 0 0 0 7.513Zm57.896-4.708a4.407 4.407 0 1 0 0-8.814a4.407 4.407 0 0 0 0 8.814Zm-17.707.934a3.43 3.43 0 1 0 0-6.86a3.43 3.43 0 0 0 0 6.86Zm26.508 4.186a2.623 2.623 0 1 0 0-5.246a2.623 2.623 0 0 0 0 5.246Z"/><path d="M147.442 28.232a4.864 4.864 0 1 0 0-9.727a4.864 4.864 0 0 0 0 9.727Zm19.303-4.719a3.361 3.361 0 1 0 0-6.723a3.361 3.361 0 0 0 0 6.723ZM15.926 105.501a4.222 4.222 0 1 0 0-8.444a4.222 4.222 0 0 0 0 8.444Zm95.796-82.278a2.273 2.273 0 1 0 0-4.546a2.273 2.273 0 0 0 0 4.546ZM189.81 33.63a2.743 2.743 0 1 0 0-5.487a2.743 2.743 0 0 0 0 5.486Zm-51.268-13.723a3.967 3.967 0 1 0 0-7.934a3.967 3.967 0 0 0 0 7.934ZM47.95 80.147a4.57 4.57 0 1 0 0-9.142a4.57 4.57 0 0 0 0 9.142Z"/></g><path fill="#FFF" d="m174.343 58.56l-4.717-.112l-4.718.108l-4.717.328l-4.715.543l-4.71.753l-4.706.951l-4.698 1.14l-4.691 1.314l-4.684 1.474l-4.676 1.616l-4.667 1.741l-4.66 1.848l-4.653 1.936l-4.645 2.005l-4.639 2.056l-4.632 2.087l-9.246 4.2l-4.614 2.081l-4.61 2.048l-4.605 2.002l-4.6 1.945l-4.596 1.878l-4.593 1.801l-4.59 1.72l-4.587 1.63l-4.585 1.538l-4.583 1.444l-4.581 1.348l-4.582 1.252l-4.58 1.158l-4.581 1.064l-4.582.974l-4.582.886l-4.584.804l-5.028.795l-.222 1.53a122.374 122.374 0 0 0-.496 31.246l.32 2.843l6.64-2.947l4.63-2.088l9.246-4.2l4.614-2.08l4.608-2.042l4.602-1.986l4.594-1.912l4.588-1.82l4.58-1.708l4.572-1.58l4.564-1.437l4.557-1.277l4.549-1.103l4.541-.92l4.535-.723l4.53-.522l4.525-.315l4.523-.104l4.522.109l4.522.318l4.526.526l4.53.727l4.534.921l4.542 1.105l4.549 1.277l4.556 1.436l4.564 1.579l4.573 1.707l4.58 1.817l4.587 1.91l4.595 1.983l4.601 2.04l4.608 2.076l9.235 4.195l4.625 2.086l4.63 2.057l4.636 2.016l4.64 1.962l4.643 1.897l4.647 1.823l4.65 1.742l4.654 1.655l4.655 1.563l4.657 1.468l4.658 1.371l4.66 1.274l4.658 1.178l4.66 1.083l6.552 1.395l.544-1.87a122.381 122.381 0 0 0 4.866-32.645l.01-1.542l-.01-1.554l-.032-1.664a122.399 122.399 0 0 0-9.274-43.627l-.423-1.01l-.756-1.748l-4.763-2.142l-4.63-2.052l-4.639-2.002l-4.645-1.934l-4.653-1.845l-4.66-1.74l-4.667-1.615l-4.676-1.473l-4.684-1.314l-4.69-1.141l-4.7-.954l-4.704-.755l-4.71-.547l-4.716-.332Zm-4.766 1.985l4.62.108l4.62.323l4.62.535l4.62.74l4.62.936l4.62 1.122l4.62 1.295l4.62 1.455l4.62 1.598l4.62 1.724l4.62 1.833l4.62 1.922l4.62 1.995l4.62 2.047l4.024 1.81a120.28 120.28 0 0 1 9.955 44.845l.032 1.636l.01 1.528l-.01 1.528a120.284 120.284 0 0 1-4.783 32.085l-4.608-.98l-4.62-1.074l-4.62-1.168l-4.62-1.263l-4.62-1.36l-4.62-1.455l-4.62-1.551l-4.62-1.643l-4.62-1.73l-4.62-1.813l-4.62-1.887l-4.62-1.953l-4.62-2.01l-4.62-2.052l-4.62-2.083l-9.24-4.198l-4.62-2.082l-4.62-2.047l-4.62-1.994l-4.62-1.923l-4.62-1.833l-4.62-1.724l-4.62-1.598l-4.62-1.454l-4.62-1.296l-4.62-1.122l-4.62-.936l-4.62-.74l-4.62-.535l-4.62-.323l-4.62-.108l-4.62.108l-4.62.323l-4.62.535l-4.62.74l-4.62.936l-4.62 1.122l-4.62 1.296l-4.62 1.454l-4.62 1.598l-4.62 1.724l-4.62 1.833l-4.62 1.923l-4.62 1.994l-4.62 2.047l-4.62 2.082l-9.24 4.198l-4.62 2.083l-4.025 1.787a120.275 120.275 0 0 1 .488-30.712l3.536-.559l4.62-.81l4.62-.895l4.62-.983l4.62-1.073l4.62-1.168l4.62-1.263l4.62-1.36l4.62-1.456l4.62-1.55l4.62-1.643l4.62-1.73l4.62-1.813l4.62-1.887l4.62-1.954l4.62-2.008l4.62-2.053l4.62-2.083l9.24-4.198l4.62-2.082l4.62-2.047l4.62-1.995l4.62-1.922l4.62-1.833l4.62-1.724l4.62-1.598l4.62-1.455l4.62-1.295l4.62-1.122l4.62-.937l4.621-.74l4.62-.534l4.62-.323l4.62-.108Z"/><path fill="#7DB0BC" stroke="#FFF" d="m169.577 60.045l4.643.108l4.643.325l4.642.537l4.641.743l4.64.94l4.638 1.127l4.636 1.3l4.634 1.46l4.632 1.601l4.636 1.73l4.627 1.836l4.626 1.925l4.625 1.997l4.623 2.048l4.201 1.893a120.778 120.778 0 0 1 10.087 45.827l.017 1.024l.01 1.534l-.01 1.531a120.784 120.784 0 0 1-4.933 32.663l-5.07-1.077l-4.63-1.076l-4.63-1.17l-4.629-1.266l-4.63-1.363l-4.628-1.458l-4.628-1.554l-4.628-1.646l-4.627-1.733l-4.627-1.815l-4.626-1.89l-4.624-1.955l-4.624-2.01l-4.622-2.054l-4.622-2.084l-9.238-4.197l-4.618-2.08l-4.615-2.046l-4.614-1.992l-4.612-1.92l-4.61-1.828l-4.615-1.722l-4.608-1.594l-4.606-1.45l-4.604-1.291l-4.602-1.118l-4.6-.932l-4.6-.737l-4.597-.532l-4.598-.321l-4.596-.108l-4.597.108l-4.597.321l-4.598.532l-4.6.737l-4.6.932l-4.602 1.118l-4.604 1.29l-4.606 1.451l-4.607 1.594l-4.605 1.718l-4.612 1.83l-4.614 1.92l-4.616 1.992l-4.617 2.046l-4.619 2.081l-9.241 4.199l-4.622 2.084l-4.647 2.065a120
+                            .776 120.776 0 0 1 .465-31.882l3.892-.617l4.611-.809l4.612-.892l4.61-.98l4.611-1.072l4.61-1.165l4.611-1.26l4.611-1.358l4.612-1.453l4.611-1.547l4.612-1.64l4.613-1.728l4.614-1.81l4.614-1.885l4.615-1.951l4.617-2.007l4.617-2.052l4.619-2.083l9.241-4.198l4.623-2.083l4.625-2.05l4.626-1.996l4.627-1.926l4.63-1.836l4.626-1.727l4.632-1.602l4.634-1.459l4.636-1.3l4.638-1.126l4.64-.94l4.64-.744l4.643-.537l4.643-.325l4.643-.108Z"/><path fill="#5C7DA2" d="m95.657 115.985l4.62.108l4.62.323l4.62.535l4.62.74l4.62.936l4.62 1.122l4.62 1.296l4.62 1.454l4.62 1.598l4.62 1.724l4.62 1.833l4.62 1.923l4.62 1.994l4.62 2.047l4.62 2.082l4.62 2.099l4.62 2.099l4.62 2.083l4.62 2.053l4.62 2.009l4.62 1.953l4.62 1.887l4.62 1.813l4.62 1.73l4.62 1.643l4.62 1.55l4.62 1.457l4.62 1.36l4.62 1.262l4.62 1.168l4.62 1.074l3.955.84a120.275 120.275 0 0 1-68.806 75.342a120.284 120.284 0 0 1-157.154-65.096a120.283 120.283 0 0 1-8.133-30.376l3.757-1.669l4.62-2.083l4.62-2.1l4.62-2.098l4.62-2.082l4.62-2.047l4.62-1.994l4.62-1.923l4.62-1.833l4.62-1.724l4.62-1.598l4.62-1.454l4.62-1.296l4.62-1.122l4.62-.936l4.62-.74l4.62-.535l4.62-.323l4.62-.108Z"/><path fill="#444876" d="M104.897 147.13v15.493h27.72v21.396h27.72v14.634h27.72v6.177h27.72v5.399a120.277 120.277 0 0 1-133.81 28.893a120.284 120.284 0 0 1-60.231-54.77v-14.434h27.72V150.61h27.72v-3.48h27.72Z"/><path fill="#FFF" d="M105.843 146.184v15.493h27.72v21.395h27.72v14.635h27.72v6.177h27.72l.002 5.322a133.74 133.74 0 0 1-1.895 2.023l-.001-5.454h-25.826v25.883c-.628.37-1.26.734-1.894 1.092v-33.151l-25.826-.001v43.982c-.63.182-1.261.358-1.894.529v-59.145h-25.826v63.185c-.631.029-1.263.053-1.894.073v-84.653h-25.826v82.65c-.633-.118-1.264-.241-1.895-.37l.001-97.774H78.122v1.59h.001v87.785a116.51 116.51 0 0 1-1.895-.883l.001-85.01H50.402v17.414h.001l-.001 50.93a120.27 120.27 0 0 1-1.893-1.631v-47.406H22.682l-.001 15.236c-.65-1.179-1.282-2.37-1.893-3.571l.002-13.558h27.72v-19.306h27.72v-3.481h29.613Z"/><path fill="#444876" d="M127.997 0a128 128 0 0 1 127.986 126.37l.01 1.627l-.01 1.626a128 128 0 0 1-127.986 126.37A128 128 0 0 1 0 127.998A128 128 0 0 1 127.997 0Zm0 4.203A123.797 123.797 0 0 0 4.203 127.997A123.797 123.797 0 0 0 127.997 251.79A123.797 123.797 0 0 0 251.78 129.57l.01-1.573l-.01-1.573A123.797 123.797 0 0 0 127.997 4.203Z"/></svg>
+                            <svg width="2500" height="2490" viewBox="0 0 256 255" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet"><defs><linearGradient x1="12.959%" y1="12.039%" x2="79.639%" y2="78.201%" id="a"><stop stop-color="#387EB8" offset="0%"/><stop stop-color="#366994" offset="100%"/></linearGradient><linearGradient x1="19.128%" y1="20.579%" x2="90.742%" y2="88.429%" id="b"><stop stop-color="#FFE052" offset="0%"/><stop stop-color="#FFC331" offset="100%"/></linearGradient></defs><path d="M126.916.072c-64.832 0-60.784 28.115-60.784 28.115l.072 29.128h61.868v8.745H41.631S.145 61.355.145 126.77c0 65.417 36.21 63.097 36.21 63.097h21.61v-30.356s-1.165-36.21 35.632-36.21h61.362s34.475.557 34.475-33.319V33.97S194.67.072 126.916.072zM92.802 19.66a11.12 11.12 0 0 1 11.13 11.13 11.12 11.12 0 0 1-11.13 11.13 11.12 11.12 0 0 1-11.13-11.13 11.12 11.12 0 0 1 11.13-11.13z" fill="url(#a)"/><path d="M128.757 254.126c64.832 0 60.784-28.115 60.784-28.115l-.072-29.127H127.6v-8.745h86.441s41.486 4.705 41.486-60.712c0-65.416-36.21-63.096-36.21-63.096h-21.61v30.355s1.165 36.21-35.632 36.21h-61.362s-34.475-.557-34.475 33.32v56.013s-5.235 33.897 62.518 33.897zm34.114-19.586a11.12 11.12 0 0 1-11.13-11.13 11.12 11.12 0 0 1 11.13-11.131 11.12 11.12 0 0 1 11.13 11.13 11.12 11.12 0 0 1-11.13 11.13z" fill="url(#b)"/></svg>
+                            <h2>Iris flower classification</h2>
+                            <p>This Project is thorugh application of machine learning with python programming. It focuses on IRIS flower classification using Machine Learning with scikit tools. This projects aims in identifying the type of iris flower (Versicolor, Setosa, Virginica) using various parameters like sepal length, sepal width, type.</p>
+                           <br>
+                           <div class="git2"><a href="https://github.com/mayank29568/Iris-Flower-Classification"><b class="git2-size">Github Repo</b></a></div>       
+                    </div>
+                   <!-- <div>
+                        <i class="fa-solid fa-crop"></i>
+                        <h2>DSA</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error excepturi repellat aperiam quam reprehenderit asperiores voluptate quis architecto velit iste libero impedit veniam, nam, molestiae, nulla quaerat cum soluta iusto.</p>
+                        <a href="#">Learn More</a>
+                    </div>-->
+                </div>
+        </div>
+    </div>
+    <!-- ---------Experience------ -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-tittle">Experience</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img class="work1" src="Assets/ISM 2.jpg">
+                    <div class="layer">
+                        <h3>Undergraduate Research Intern</h3>
+                        <p>Sucessfully completed my two months internship in the field of Data Science and Machine learning.</p>
+                        <a href="https://drive.google.com/file/d/1tcamteWaJgM9Nh9k0_uU7lJDZVah02go/view?usp=sharing"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img class="work2" src="Assets/oasis_infobyte_logo.jpg">
+                    <div class="layer">
+                        <h3>Analyst Intern</h3>
+                        <p> Conducted comprehensive data analysis to predict and designed a model for future unemployment rates</p>
+                        <a href="https://drive.google.com/file/d/1PM8AIVisNkMBnp4efDigvGz2DJQXffaP/view?usp=drive_link"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img class="work3" src="Assets/Indibini.jpg">
+                    <div class="layer">
+                        <h3>Buisness Analyst Intern</h3>
+                        <p>A gifting startup, where I managed revenue models, process flows, operations support & customer engagement strategies to ensure project success</p>
+                        <a href="https://drive.google.com/file/d/1t6qvEItMVBj4LmVaczON_16qnB_VCuxT/view?usp=sharing"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>  
+            </div>
+            <a href="https://drive.google.com/drive/folders/16ks6Jfd0LCrpvEDfcxev4TpPeA0MWnSb?usp=sharing" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- -------------contact------ -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="">Connect with me</h1>
+                 <p><i class=" fa fa-envelope" style="font-size: 30px;"></i><a href="mailto:mayankgiri708@gmail.com" class="mail1">mayankgiri708@gmail.com</a> </p>
+                    <p><i class="fa-sharp fa-solid fa-phone-volume"></i>+91 7250520529</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/mayank.giri.3323"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/mayankgiri2110?igsh=ajVxbjdoeTAyMTA2"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="mailto:mayankgiri708@gmail.com"><i class="fa fa-envelope" style="font-size:32px"></i></a>
+                        <a href="https://www.linkedin.com/in/mayank-giri-66b24321b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="Assets/Mayank Giri_Resume.pdf" download class="btn btn2" >Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="Email" placeholder="Your mailId" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p sid="copy">Developed by Mayank Giri <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+<script>
+    var tablinks= document.getElementsByClassName("tab-links");
+    var tabcontents= document.getElementsByClassName("tab-content");
+    function opentab(tabname){
+        for( tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for( tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+<script>
+    var sidemenu= document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0"
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+</script> 
+<!-- -------Contact form starts -->
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyfT1JrPQyvc_oXSe9iElOrZe1CshxwM8KXvLhLADoVsfLRn1vx1jItsAcCk6qgBHVY/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+          msg.innerHTML= "Your Message sent successfully"
+          setTimeout(function(){
+              msg.innerHTML=" "
+          },2500)
+          form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  <!-- ---------------contact form ends------ -->
+
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+<script>
+    var typed=new Typed(".auto-type",{
+        strings: ["Frontend Developer","Analyst","ML Engineer","Orator",'Music lover'],
+        loop: true,
+        typeSpeed: 150,
+        backspeed: 150,
+    })
+</script>
+</body>
+</html>
